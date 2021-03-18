@@ -29,7 +29,7 @@ export const Questions = [
     question:
       "Which of the following best describes the types of data for which Amazon S3 Glacier is best suited?" +
       "A) Frequently erased within 30 days," +
-      "B) Is availalbe after a three to five-hour restore period," +
+      "B) Is available after a three to five-hour restore period," +
       "C) Is infrequently or rarely accessed," +
       "D) Requires block storage." +
       "(Choose two)",
