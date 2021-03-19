@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+![image](https://user-images.githubusercontent.com/38820651/111684684-e3e1f480-888b-11eb-9fca-83ef95c80894.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# AWS Quiz 🧩
 
-## Available Scripts
+## About 📝
+This is a quiz app created to assist with studying for the AWS Certified Cloud Practicioner exam. <br/>
+The 90-minute exam consists of 65 multiple-choice/multiple-response questions. 
+See [here](https://aws.amazon.com/certification/certified-cloud-practitioner/) for more details.
 
-In the project directory, you can run:
+## Stack 📚
+This app was built using React.js with TypeScript.
 
-### `npm start`
+## Current Features 🎯
+- [x] Click answers and get instant feedback on whether the answer is right or wrong. 
+- [x] Track your score over a ten question quiz (and get a final passing mark if you are higher than the required 70% mark). 
+- [x] Get feedback providing details of why an answer is correct. 
+- [x] See a summary of results at the end of the quiz. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Future Features 🛠
+- [ ] Add in additional questions for the AWS CCP exam. 
+- [ ] Add in support for more AWS quizzes/Azure fundamental cloud quizzes (AZ-900).
+- [ ] Add in options for timed quizzes to emulate the exam. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Deployment ⚡️
+The app has been deployed using a CI/CD pipeline with AWS. 
+This has utilised AWS CodePipeline (CodeBuild and CodeDeploy) to get the details from this repository and move them to an S3 bucket for deployment. 
+This github repository is monitored for changes, and the Pipeline will re-run the build and deploy stages if this occurs to ensure that the app is up-to-date.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The app can be accessed [here](http://aws-cloud-practicioner-quiz-app.s3-website-us-east-1.amazonaws.com/).⭐️
