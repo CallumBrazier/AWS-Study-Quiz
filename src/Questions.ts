@@ -302,4 +302,226 @@ export const Questions = [
     note:
       "The AWS Acceptable Use Policy provides information regarding prohibited actions on the AWS infrastructure.",
   },
+  {
+    question:
+      "Under the shared responsibility model, which of the following is the customer responsible for?",
+    answers: [
+      "Ensuring that disk drives are wiped after use.",
+      "Ensuring that firmware is updated on hardware devices.",
+      "Ensuring that data is encrypted at rest.",
+      "Ensuring that network cables are category six or higher.",
+    ],
+    correct_answer: "Ensuring that data is encrypted at rest.",
+    incorrect_answers: [
+      "Ensuring that disk drives are wiped after use.",
+      "Ensuring that firmware is updated on hardware devices.",
+      "Ensuring that network cables are category six or higher.",
+    ],
+    note: "",
+  },
+  {
+    question:
+      "The use of what AWS feature or service allows companies to track and categorize spending on a detailed level?",
+    answers: [
+      "Cost allocation tags",
+      "Consolidated billing",
+      "AWS Budgets",
+      "AWS Marketplace",
+    ],
+    correct_answer: "Cost allocation tags",
+    incorrect_answers: [
+      "Consolidated billing",
+      "AWS Budgets",
+      "AWS Marketplace",
+    ],
+    note:
+      "You can use tags to organize your resources, and cost allocation tags to track your AWS costs on a detailed level.",
+  },
+  {
+    question:
+      "Which service stores objects, provides real-time access to those objects, and offers versioning and lifecycle capabilities?",
+    answers: [
+      "Amazon Glacier",
+      "AWS Storage Gateway",
+      "Amazon S3",
+      "Amazon EBS",
+    ],
+    correct_answer: "Amazon S3",
+    incorrect_answers: ["Amazon Glacier", "AWS Storage Gateway", "Amazon EBS"],
+    note:
+      "Amazon Simple Storage Service (S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use case, such as websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. Amazon S3 provides easy-to-use management features so you can organize your data and configure finely-tuned access controls to meet your specific business, organizational, and compliance requirements. Amazon S3 is designed for 99.999999999% (11 9's) of durability, and stores data for millions of applications for companies all around the world.",
+  },
+  {
+    question:
+      "What AWS team assists customers with accelerating cloud adoption through paid engagements in any of several specialty practice areas?",
+    answers: [
+      "AWS Enterprise Support",
+      "AWS Solutions Architects",
+      "AWS Professional Services",
+      "AWS Account Managers",
+    ],
+    correct_answer: "AWS Professional Services",
+    incorrect_answers: [
+      "AWS Enterprise Support",
+      "AWS Solutions Architects",
+      "AWS Account Managers",
+    ],
+    note:
+      "The AWS Professional Services organization is a global team of experts that can help you realize your desired business outcomes when using the AWS Cloud. They work together with your team and your chosen member of the AWS Partner Network (APN) to execute your enterprise cloud computing initiatives. The team provides assistance through a collection of offerings which help you achieve specific outcomes related to enterprise cloud adoption. They also deliver focused guidance through their global specialty practices, which cover a variety of solutions, technologies, and industries.",
+  },
+  {
+    question:
+      "A customer would like to design and build a new workload on AWS Cloud but does not have the AWS-related software technical expertise in-house. Which of the following AWS programs can a customer take advantage of to achieve that outcome?",
+    answers: [
+      "AWS Partner Network Technology Partners",
+      "AWS Marketplace",
+      "AWS Partner Network Consulting Partners",
+      "AWS Service Catalog",
+    ],
+    correct_answer: "AWS Partner Network Consulting Partners",
+    incorrect_answers: [
+      "AWS Partner Network Technology Partners",
+      "AWS Marketplace",
+      "AWS Service Catalog",
+    ],
+    note:
+      "APN Consulting Partners are professional services firms that help customers of all types and sizes design, architect, build, migrate, and manage their workloads and applications on AWS, accelerating their journey to the cloud.",
+  },
+  {
+    question:
+      "Distributing workloads across multiple Availability Zones supports which cloud architecture design principle?",
+    answers: [
+      "Implement automation",
+      "Design for agility",
+      "Design for failure",
+      "Implement elasticity",
+    ],
+    correct_answer: "Design for failure",
+    incorrect_answers: [
+      " Implement automation",
+      "Design for agility",
+      "Implement elasticity",
+    ],
+    note: "",
+  },
+  {
+    question:
+      "Which AWS services can host a Microsoft SQL Server database? (Choose two.) A. Amazon EC2, B. Amazon Relational Database Service (Amazon RDS), C. Amazon Aurora, D. Amazon Redshift, E. Amazon S3",
+    answers: ["AC", "AB", "DE", "CE"],
+    correct_answer: "AB",
+    incorrect_answers: ["AC", "DE", "CE"],
+    note:
+      "Amazon offer the most options for using new and existing Microsoft software licenses on AWS. By purchasing Amazon Elastic Compute Cloud (Amazon EC2) or Amazon Relational Database Service (Amazon RDS) license-included instances, you get new, fully compliant Windows Server and SQL Server licenses from AWS. Amazon Aurora only supports MySQL and PostgreSQL relational databases, not MS SQL.",
+  },
+  {
+    question:
+      "Which of the following inspects AWS environments to find opportunities that can save money for users and also improve system performance?",
+    answers: [
+      "AWS Cost Explorer",
+      "AWS Trusted Advisor",
+      "Consolidated billing",
+      "Detailed billing",
+    ],
+    correct_answer: "AWS Trusted Advisor",
+    incorrect_answers: [
+      "AWS Cost Explorer",
+      "Consolidated billing",
+      "Detailed billing",
+    ],
+    note:
+      "AWS Trusted Advisor is an online resource to help you reduce cost, increase performance, and improve security by optimising your AWS environment. Trusted Advisor provides real-time guidance to help you provision your resources following AWS best practices.",
+  },
+  {
+    question:
+      "Which of the following Amazon EC2 pricing models allow customers to use existing server-bound software licenses?",
+    answers: [
+      "Spot Instances",
+      "Reserved Instances",
+      "Dedicated Hosts",
+      "On-Demand Instances",
+    ],
+    correct_answer: "Dedicated Hosts",
+    incorrect_answers: [
+      "Spot Instances",
+      "Reserved Instances",
+      "On-Demand Instances",
+    ],
+    note:
+      "A Dedicated Host is a physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce costs by allowing you to use your existing server-bound software licenses, including Windows Server, SQL Server, and SUSE Linux Enterprise Server (subject to your license terms), and can also help you meet compliance requirements.",
+  },
+  {
+    question:
+      "Which AWS characteristics make AWS cost effective for a workload with dynamic user demand? (Choose two.) A. High availability, B. Shared security model, C. Elasticity, D. Pay-as-you-go pricing, E. Reliability",
+    answers: ["CD", "AE", "BD", "DE"],
+    correct_answer: "CD",
+    incorrect_answers: ["AE", "BD", "DE"],
+    note: "",
+  },
+  {
+    question:
+      "Which service enables risk auditing by continuously monitoring and logging account activity, including user actions in the AWS Management Console and AWS SDKs?",
+    answers: [
+      "Amazon CloudWatch",
+      "AWS CloudTrail",
+      "AWS Config",
+      "AWS Health",
+    ],
+    correct_answer: "AWS CloudTrail",
+    incorrect_answers: ["Amazon CloudWatch", "AWS Config", "AWS Health"],
+    note:
+      "AWS CloudTrail is a web service that records AWS API calls for your account and delivers log files to you. The recorded information includes the identity of the API caller, the time of the API call, the source IP address of the API caller, the request parameters, and the response elements returned by the AWS service. CloudWatch focuses on the activity of AWS services and resources, reporting on their health and performance. On the other hand, CloudTrail is a log of all actions that have taken place inside your AWS environment.",
+  },
+  {
+    question:
+      "Which of the following are characteristics of Amazon S3? (Choose two.) A. A global file system, B. An object store, C. A local file store, D. A network file system, E. A durable storage system",
+    answers: ["AE", "BD", "CE", "BE"],
+    correct_answer: "BE",
+    incorrect_answers: ["AE", "BD", "CE"],
+    note:
+      "Amazon Simple Storage Service (S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use case, such as websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. Amazon S3 provides easy-to-use management features so you can organize your data and configure finely-tuned access controls to meet your specific business, organizational, and compliance requirements. Amazon S3 is designed for 99.999999999% (11 9's) of durability, and stores data for millions of applications for companies all around the world.",
+  },
+  {
+    question:
+      "Which services can be used across hybrid AWS Cloud architectures? (Choose two.) A. Amazon Route 53, B. Virtual Private Gateway, C. Classic Load Balancer, D. Auto Scaling, E. Amazon CloudWatch default metrics",
+    answers: ["AB", "BD", "CE", "AD"],
+    correct_answer: "AB",
+    incorrect_answers: ["BD", "CE", "AD"],
+    note:
+      "With AWS Direct Connect customers can establish a private virtual interface from their on-premise network directly to their Amazon VPC. Amazon Route 53 is a highly available, scalable DNS web service. With Amazon Route 53 Resolver customers get recursive DNS for their Amazon VPC and on-premises networks over AWS Direct Connect or AWS Managed VPN.",
+  },
+  {
+    question:
+      "What costs are included when comparing AWS Total Cost of Ownership (TCO) with on-premises TCO?",
+    answers: [
+      "Project management",
+      "Antivirus software licensing",
+      "Data center security",
+      "Software development",
+    ],
+    correct_answer: "Data center security",
+    incorrect_answers: [
+      "Project management",
+      "Antivirus software licensing",
+      "Software development",
+    ],
+    note: "",
+  },
+  {
+    question:
+      "A company is considering using AWS for a self-hosted database that requires a nightly shutdown for maintenance and cost-saving purposes. Which service should the company use?",
+    answers: [
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "Amazon Elastic Compute Cloud (Amazon EC2) with Amazon EC2 instance store",
+      "Amazon EC2 with Amazon Elastic Block Store (Amazon EBS)",
+    ],
+    correct_answer: "Amazon EC2 with Amazon Elastic Block Store (Amazon EBS)",
+    incorrect_answers: [
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "Amazon Elastic Compute Cloud (Amazon EC2) with Amazon EC2 instance store",
+    ],
+    note:
+      "Some Amazon Elastic Compute Cloud (Amazon EC2) instance types come with a form of directly attached, block-device storage known as the instance store. The instance store is ideal for temporary storage, because the data stored in instance store volumes is not persistent through instance stops, terminations, or hardware failures. For data you want to retain longer, or if you want to encrypt the data, use Amazon Elastic Block Store (Amazon EBS) volumes instead. EBS volumes preserve their data through instance stops and terminations, can be easily backed up with EBS snapshots, can be removed from one instance and reattached to another, and support full-volume encryption.",
+  },
 ];
