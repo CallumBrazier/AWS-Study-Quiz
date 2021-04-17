@@ -1157,4 +1157,39 @@ export const Questions = [
     ],
     note: "",
   },
+  {
+    question:
+      "Which of the following are features of Amazon CloudWatch Logs? (Choose TWO) A) Summaries by Amazon Simple Notification Service (Amazon SNS), B) Free Amazon Elasticsearch Service analytics, C) Provided at no charge, D) Real-time monitoring, E) Adjustable retention",
+    answers: ["DE", "BD", "CE", "AB"],
+    correct_answer: "DE",
+    incorrect_answers: ["BD", "CE", "AB"],
+    note:
+      "You can use Amazon CloudWatch Logs to monitor, store, and access your log files from Amazon Elastic Compute Cloud (Amazon EC2) instances, AWS CloudTrail, Route 53, and other sources. CloudWatch Logs enables you to centralize the logs from all of your systems, applications, and AWS services that you use, in a single, highly scalable service. You can then easily view them, search them for specific error codes or patterns, filter them based on specific fields, or archive them securely for future analysis. CloudWatch Logs enables you to see all of your logs, regardless of their source, as a single and consistent flow of events ordered by time, and you can query them and sort them based on other dimensions, group them by specific fields, create custom computations with a powerful query language, and visualize log data in dashboards. By default, logs are kept indefinitely and never expire. You can adjust the retention policy for each log group, keeping the indefinite retention, or choosing a retention period between 10 years and one day.",
+  },
+  {
+    question:
+      "Which of the following is an AWS managed Domain Name System (DNS) web service?",
+    answers: [
+      "Amazon Route 53",
+      "Amazon Neptune",
+      "Amazon SageMaker",
+      "Amazon Lightsail",
+    ],
+    correct_answer: "Amazon Route 53",
+    incorrect_answers: [
+      "Amazon Neptune",
+      "Amazon SageMaker",
+      "Amazon Lightsail",
+    ],
+    note:
+      "Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost-effective way to route end users to Internet applications by translating human readable names, such as www.example.com, into the numeric IP addresses, such as 192.0.2.1, that computers use to connect to each other. Amazon Route 53 is fully compliant with IPv6 as well. Amazon Route 53 effectively connects user requests to infrastructure running in AWS - such as EC2 instances, Elastic Load Balancing load balancers, or Amazon S3 buckets - and can also be used to route users to infrastructure outside of AWS. Amazon Route 53 also offers Domain Name Registration - you can purchase and manage domain names such as example.com and Amazon Route 53 will automatically configure DNS settings for your domains.",
+  },
+  {
+    question:
+      "A customer is deploying a new application and needs to choose an AWS Region. Which of the following factors could influence the customer's decision? (Choose TWO) A) Reduced latency to users, B) The applications presentation in the local language, C) Data sovereignty compliance, D) Cooling costs in hotter climates, E) Proximity to the customer's office for on-site visits",
+    answers: ["AE", "CD", "BC", "AC"],
+    correct_answer: "AC",
+    incorrect_answers: ["AE", "CD", "BC"],
+    note: "",
+  },
 ];

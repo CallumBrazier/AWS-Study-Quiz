@@ -68,4 +68,8 @@ export const Wrapper = styled.div`
   .start {
     max-width: 200px;
   }
+
+  .start:last-of-type {
+    margin: 0 0 0 2em;
+  }
 `;
