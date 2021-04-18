@@ -27,16 +27,14 @@ const App = () => {
   const [gameOver, setGameOver] = useState(true);
   const [results, setResults] = useState(false);
   const [summary, setSummary] = useState(false);
-  const [quizset, setQuizset] = useState("");
 
   console.log(questions);
 
-  const startTrivia = async () => {
+  const startTrivia = async (quizset: string) => {
     setLoading(true);
     setGameOver(false);
     setResults(false);
     setSummary(false);
-    setQuizset("CCP");
 
     const newQuestions = await fetchQuizQuestions(quizset);
 
@@ -46,22 +44,6 @@ const App = () => {
     setNumber(0);
     setLoading(false);
   }; //add error handling through a try catch block.
-
-  const startCDA = async () => {
-    setLoading(true);
-    setGameOver(false);
-    setResults(false);
-    setSummary(false);
-    setQuizset("CDA");
-
-    const newQuestions = await fetchQuizQuestions(quizset);
-
-    setQuestions(newQuestions);
-    setScore(0);
-    setUserAnswers([]);
-    setNumber(0);
-    setLoading(false);
-  };
 
   const checkAnswer = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (!gameOver) {
@@ -112,10 +94,10 @@ const App = () => {
         ) : null}
         {gameOver || (userAnswers.length === TOTAL_QUESTIONS && results) ? (
           <div>
-            <button className="start" onClick={startTrivia}>
+            <button className="start" onClick={() => startTrivia("CCP")}>
               Start CCP
             </button>
-            <button className="start" onClick={startCDA}>
+            <button className="start" onClick={() => startTrivia("CDA")}>
               Start CDA
             </button>
           </div>
